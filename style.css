@@ -1,0 +1,843 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comforter", cursive;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(https://www.rd.com/wp-content/uploads/2018/03/alabama.jpg?w=1000);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 40%;
+}
+.nav-links {
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+}
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.footer a {
+  text-decoration: none;
+}
+.course a {
+  text-decoration: none;
+}
+@media (min-width: 800px) {
+  nav .fa-bars {
+    display: none;
+  }
+  nav .fa-times {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+  nav .fa-bars {
+    display: block;
+  }
+  nav .fa-times {
+    display: block;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .text-box h1 {
+    font-size: 25px;
+  }
+  .nav-links {
+    position: relative;
+    background: rgb(165, 149, 149);
+    height: 30vh;
+    width: 40vw;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+    display: none;
+  }
+
+  nav .fa- {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 10%;
+  }
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+  text-decoration: none;
+}
+.fa-heart-o {
+  color: #f44336;
+}
+.back {
+  text-decoration: none;
+  color: #f44336;
+}
+/* <-----login css------> */
+.login {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(179, 182, 189, 0.418),
+      rgba(4, 9, 30, 0.7)
+    ),
+    url(./outlook-1844110_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.loginbox {
+  width: 75%;
+  height: 420px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.loginbox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+  color: #fff;
+}
+.loginbox input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginbox input[type="text"],
+input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.loginbox input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover {
+  cursor: pointer;
+  background: lightblue;
+  color: #000;
+}
+.loginbox a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+.loginbox a:hover {
+  color: #ffc107;
+}
+@media (min-width: 800px) {
+  .loginbox {
+    width: 30%;
+  }
+}
+/* <--------contact us--------> */
+.cover {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(15, 16, 19, 0.7), rgba(4, 9, 30, 0.7)),
+    url(./snowman-4688913_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+}
+.contact-title {
+  margin-top: 10%;
+  color: #fff;
+  text-transform: uppercase;
+}
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+.form-control {
+  width: 55%;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+}
+input {
+  height: 45px;
+}
+form .submit {
+  background: #ff5722;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+form .submit:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+.font1 {
+  color: white;
+}
+@media only screen and (max-width: 800px) {
+  .form-control {
+    width: 50%;
+  }
+  .contact-title {
+    margin-top: 30%;
+  }
+}
+/* <-----------campaign------------> */
+.color_campaign {
+  background-color: #4baff1;
+}
+.line {
+  text-decoration: none;
+  color: rgb(85, 27, 27);
+  padding-left: 20px;
+}
+.head12 h1 {
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: normal;
+}
+.head12 p {
+  text-align: center;
+  color: white;
+}
+.body1 img {
+  float: left;
+}
+.dog1 h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  position: relative;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.body1 h2 {
+  text-align: center;
+}
+.body1 h3 {
+  text-align: left;
+  padding-top: 40px;
+}
+.body1 p {
+  word-spacing: 10px;
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.link12 {
+  text-decoration: none;
+  font-size: medium;
+  font-style: normal;
+  color: white;
+  padding-left: 20px;
+}
+.link21 {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+@media (max-width: 800px) {
+  .dog1 img {
+    width: 20%;
+  }
+  .body1 img {
+    width: 40%;
+  }
+  .body1 h3 {
+    text-align: left;
+    padding-top: 0;
+  }
+}
+/* ------------------Services--------------- */
+.nav-service {
+  text-align: center;
+  display: inline-flex;
+  background: #007db4;
+}
+.nav-service ul {
+  margin: 0;
+}
+.nav-service li {
+  display: inline;
+}
+.nav-service a {
+  text-decoration: none;
+  padding: 0.5em;
+  color: black;
+  display: inline-block;
+}
+.nav-service a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.nav-pet {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid black;
+  display: block;
+  padding: 2% 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+.service__header {
+  display: flex;
+  padding: 0 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.service__header img {
+  width: 10%;
+}
+.navservice img {
+  width: 100%;
+}
+.home_service_icons {
+  display: flex;
+  border: 1px solid rgb(32, 19, 19);
+  padding: 1% 1%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.home_service_icons span {
+  color: #003b49;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  justify-content: space-around;
+}
+.service_icons {
+  background-color: rgb(108, 177, 233);
+}
+.head_header h1 {
+  font-size: 30px;
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 0%;
+}
+.service_middleimg ul {
+  margin: 0;
+}
+.service_middleimg li {
+  display: inline;
+}
+.service_middleimg img {
+  width: 20%;
+  height: fit-content;
+}
+.service_middleimg a {
+  padding-top: 1%;
+}
+.footer__contact-bar {
+  text-align: center;
+}
+.footer_service_homepage {
+  text-decoration: none;
+}
+.body_images ul li {
+  display: inline;
+  padding: 2% 1%;
+}
+.service_middleimg img {
+  padding-left: 6%;
+}
+.visit_us_service a {
+  text-decoration: none;
+  padding-left: 40%;
+}
+/* ------------groom-------------- */
+.content-style_grid span {
+  font-size: 12px;
+}
+.content-style_grid {
+  padding: 16px;
+}
+/* ----------pethotel------------- */
+.quodrant_1 {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding-left: 10%;
+}
+
+.qtop_1,
+.qbottom_1 {
+  width: 66%;
+  height: 46vh;
+}
+
+.quodrant_11,
+.quodrant_22,
+.quodrant_33,
+.quodrant_44 {
+  display: inline;
+  float: left;
+  width: 46%;
+  height: 96%;
+  margin: 2%;
+}
+
+.quodrant_11 {
+  top: 0;
+  left: 50vh;
+  background-color: rgb(0, 132, 128);
+}
+.quodrant_11 h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20%;
+  color: #fff;
+}
+.quodrant_11 p {
+  color: #fff;
+  text-align: center;
+}
+.quodrant_22 {
+  top: 0;
+  left: 0;
+}
+
+.quodrant_33 {
+  top: 50vw;
+  left: 0;
+  background-color: rgb(206, 231, 231);
+}
+.quodrant_33 h1 {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20%;
+  color: lightseagreen;
+}
+.quodrant_33 p {
+  color: rgb(6, 85, 68);
+  text-align: center;
+}
+.quodrant_11 a {
+  text-decoration: none;
+  text-align: center;
+}
+.quodrant_33 a {
+  text-decoration: none;
+  text-align: center;
+}
+.quodrant_44 a {
+  text-decoration: none;
+  text-align: center;
+}
+.quodrant_44 {
+  top: 50vw;
+  left: 50vh;
+  background-color: gainsboro;
+}
+.quodrant_44 h1 {
+  background-color: red;
+  text-align: center;
+  text-transform: capitalize;
+}
+.quodrant_44 h2 {
+  padding-top: 10%;
+  text-align: center;
+}
+.quodrant_44 h3 {
+  color: red;
+  text-align: center;
+}
+.quodrant_44 p {
+  text-align: center;
+  color: black;
+}
+.pethostel_hostel {
+  background-image: url(./pethostel1.png);
+  position: relative;
+  background-size: cover;
+}
+.pethostel_hostel h1 {
+  padding-left: 10%;
+  text-align: left;
+  color: red;
+  text-transform: capitalize;
+}
+.pethostel_hostel p {
+  padding-left: 10%;
+  color: #000;
+}
+.pethostel_hostel h2 {
+  padding-left: 10%;
+}
+.pethostel_hostel ul {
+  padding-left: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.pethostel_hostel a {
+  text-decoration: none;
+  padding-left: 10%;
+  color: #007db4;
+}
+.footer_doggie_vacc h1 {
+  padding-top: 2%;
+  text-transform: capitalize;
+}
+.footer_doggie_vacc p {
+  color: #000;
+  text-align: center;
+}
+.footer_doggie_vacc a {
+  padding-left: 50%;
+  text-decoration: none;
+}
+/* --------doggie camp------------ */
+.quodrant {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding-left: 10%;
+}
+
+.qtop,
+.qbottom {
+  width: 66%;
+  height: 46vh;
+}
+
+.quodrant1,
+.quodrant2,
+.quodrant3,
+.quodrant4 {
+  display: inline;
+  float: left;
+  width: 46%;
+  height: 96%;
+  border-radius: 20px;
+  margin: 2%;
+}
+
+.quodrant1 {
+  background-color: rgb(226, 226, 226);
+}
+.quodrant1 h2 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 80px;
+  color: #086e75;
+}
+.quodrant1 button {
+  font-size: 10px;
+  color: #086e75;
+  float: right;
+}
+.quodrant1 p {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 40px;
+  color: #086e75;
+}
+.quodrant3 {
+  background-color: #086e75;
+  background-image: url(./doggi2.png);
+}
+
+.quodrant4 {
+  background-color: #7cf5f9;
+  background-image: url(./doggie3.png);
+}
+.doggie_head {
+  background-color: #007db4;
+  border-radius: 5%;
+}
+.doggie_head p {
+  color: white;
+  text-align: center;
+}
+.doggie_head h2 {
+  color: white;
+  text-align: center;
+}
+/* -----------------pet training----------- */
+.train {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding-left: 5%;
+}
+
+.traintop,
+.trainbottom {
+  width: 80%;
+  height: 50vh;
+}
+
+.traindog1,
+.traindog2,
+.traindog3,
+.traindog4 {
+  display: inline;
+  float: left;
+  width: 50%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+.traindog1 {
+  top: 0;
+  left: 40vh;
+  background-color: rgb(7, 174, 169);
+}
+.traindog1 h1 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 15%;
+}
+.traindog1 p {
+  text-align: center;
+  color: white;
+}
+.traindog1 a {
+  text-decoration: none;
+  padding-left: 40%;
+}
+.traindog2 {
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 132, 128);
+}
+.traindog2 h1 {
+  color: white;
+  padding-top: 15%;
+  text-align: center;
+  font-size: 40px;
+}
+.traindog2 p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.traindog2 a {
+  text-decoration: none;
+  padding-left: 35%;
+}
+.traindog3 {
+  top: 50vw;
+  left: 0;
+  background-color: rgb(205, 239, 238);
+}
+.traindog3 h1 {
+  color: black;
+  padding-top: 15%;
+  text-align: center;
+  font-size: 40px;
+}
+.traindog3 p {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+.traindog3 a {
+  text-decoration: none;
+  padding-left: 35%;
+}
+.traindog4 {
+  top: 50vw;
+  left: 50vh;
+  background-image: url(./train2.png);
+  background-size: cover;
+}
+.train_header_image {
+  background-image: url(./train1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 60vh;
+  width: 100%;
+}
+.train_header a {
+  text-decoration: none;
+  padding-left: 50%;
+}
+.train_header h1 {
+  font-size: 40px;
+  text-align: left;
+  padding-left: 2%;
+  color: #007db4;
+}
+.train_header p {
+  padding-left: 2%;
+  color: #000;
+}
+.dog-footer_image1 {
+  top: 50vw;
+  left: 50vh;
+  padding: 4%;
+}
+.footer_train h1 {
+  text-align: center;
+  color: #000;
+}
+.footer_train p {
+  text-align: center;
+  color: rgb(0, 59, 73);
+}

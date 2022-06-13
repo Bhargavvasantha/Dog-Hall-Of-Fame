@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,intial-scale=1.0" />
+    <title>Dog Hall of fame Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b2bee36619.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <a href="top"><img src="./thedog.png" alt="Dog hall of fame logo" /></a>
+        <i id="menu" class="fa fa-bars" onclick="showMenu()"></i>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html" target="_blank">Home </a></li>
+            <li><a href="./login.html" target="_blank">Login</a></li>
+            <li><a href="./campaign.html" target="_blank">Campaign</a></li>
+            <li><a href="./services.html" target="_blank">Services</a></li>
+            <li><a href="./contactus.html" target="_blank">Contact Us</a></li>
+            <li>
+              <a
+                href="https://www.facebook.com/PetsOnWheelsOfScottsdale/"
+                target="_blank"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <h1>Dog Hall Of Fame</h1>
+        <p>
+          The Dog Hall of Fame was created to recognize those dogs who display
+          superior achievement like in the helping blind,serving for country and
+          helping.<br />
+          The criteria for earning the DHF title is as follows: .
+        </p>
+        <a href="./campaign.html" class="hero-btn">Visit Us Know More</a>
+      </div>
+    </div>
+    <!-- types of dogs -->
+    <div class="course">
+      <h1>Love the Dogs</h1>
+      <p>
+        <a href="./login.html">Click here to Register for Dog Hall Of Fame </a>
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Hero Dogs</h3>
+          <p>
+            Hero Dogs places service dogs with veterans of the U.S. military and
+            first-responders with disabilities. Disabilities do not need to be
+            service connected.It’s impossible to fully thank a veteran or
+            first-responder, but a service dog can go a long way in showing our
+            appreciation. A well-trained, eager-to-please dog can do everything
+            from retrieving items, opening doors and turning on lights, to
+            alerting their partners to sounds and waking them from nightmares.
+            In short, a service dog can be invaluable
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Working Dogs</h3>
+          <p>
+            Anyone who is passionate about helping dogs live long, happy and
+            healthy lives would say that all dogs should have some sort of job.
+            Giving a dog a job they enjoy can help to prevent an almost endless
+            list of potential behavior issues (such as excessive barking,
+            inappropriate chewing and digging, separation problems, and more).
+            It can also help them maintain overall physical wellness. So, by
+            this definition, all dogs are, or at least should be, working dogs.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Companion Dogs</h3>
+          <p>
+            A companion dog can provide a veteran with PTSD critical benefits: a
+            loyal companion when depression and anxiety take over, a trusted
+            companion for fun and stress reduction, a way to express love and
+            compassion, and a good reason to spend time outdoors. Every
+            companion dog we provide benefits two lives: emotionally vulnerable
+            veteran and a rescued dog! While many veterans will benefit from a
+            companion dog
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Are you guys want to know more about us</p>
+      <div class="icons">
+        <a
+          class="fa fa-facebook-square"
+          href="https://www.facebook.com/americanhumane"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-twitter"
+          href="https://twitter.com/americanhumane"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-instagram"
+          href="https://www.youtube.com/user/americanhumane"
+          target="_blank"
+        ></a>
+        <a
+          class="fa fa-youtube"
+          href="https://www.instagram.com/americanhumane/"
+          target="_blank"
+        ></a>
+      </div>
+      <br />
+      <a class="#top" href="#top">Back to top click Here</a>
+      <br />
+      <br />
+      <div class="footer_copyright">
+        © 2022 Dog Hall Of Fame. Dog Hall Of Fame is a Non-Profit
+        organization.<br />
+        All Rights Reserved.
+      </div>
+      <p><i class="fa fa-heart-o"> ve the dogs</i></p>
+    </div>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      var menu = document.getElementById("menu");
+      console.log(menu.style);
+      function showMenu() {
+        menu.style.display = "none";
+        navLinks.style.display = "block";
+      }
+      function hideMenu() {
+        menu.style.display = "block";
+        navLinks.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
